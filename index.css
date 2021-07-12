@@ -1,0 +1,209 @@
+body{
+    background-color: #231f20 ;
+    overflow-x:hidden;
+}
+.video video{
+    width:100vw;
+    min-height:100%;
+
+}
+.first-paragraph{
+    text-align: center;
+    font-size: 36px;
+}
+.first-title{
+    padding: 20px 0;
+    font-size: 110%;
+    font-weight: bold;
+    color: #b69157;
+}
+.first-subtitle{
+    font-size: 60%;
+    font-weight: 300;
+    color: #DBDBDB;
+}
+
+/* 시 삽입 */
+.poem{
+    display: inline-block;
+    border: 5px outset #b69157;
+    height: 600.63px;
+}
+
+/* 십자가 내용 */
+.cross__second{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cross__title{
+    font-size: 95%;
+    color: #DBDBDB;
+    font-weight: bold;
+}
+.cross__sub{
+    color: #b69157;
+    font-size: 60%;
+}
+#button_for_nnext{
+    padding: 0px 30px;
+    background-color:#f4eae2 ;
+    border-radius: 15px;
+    border: 2px outset #b69157;
+    color: #b69157;
+    text-align: center;
+    font-size: 85%;
+    font-weight:bold;
+}
+.box{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bbox{
+    font-size: 20px; 
+    border: 4px outset #b69157;
+    margin: 10px;
+}
+
+.box-1-title{
+    margin-top: 30px;
+    font-size: 100%;
+    font-weight: bold;
+    color: #b69157;
+}
+.box-1-subtitle{
+    margin-top: 20px;
+    font-size: 70%;
+    font-weight: 300;
+    color: #DBDBDB;
+}
+
+.click{
+   margin-bottom: 10px;
+   border-radius: 20px;
+   width: 100px;
+   height: 30px;
+   color: #b69157;
+   border: 2px solid #b69157;
+   font-weight: bold;
+   font-size: 65%;
+}
+.click:hover{
+    background-color: #b69157;
+    color: #f4eae2;
+}
+
+/* 오시는 길 */
+.information{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+    font-size: 24px;
+}
+.information-title{
+    font-size: 100%;
+    font-weight: bold;
+    color: #DBDBDB;
+}
+.information-subtitle{
+    font-size: 80%;
+    font-weight: 300;
+    color: #b69157;
+}
+
+#inf{
+    margin-right: 20px;
+}
+
+.lastbutton{
+    display: flex;
+}
+
+#but{
+    margin-top: 30px;
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    /* line-height와 height 같으면 세로가운데정렬 */
+    text-align: center;
+    font-size: 70%;
+}
+.blog{
+    background-color: grey;
+    color: #f4eae2;
+}
+
+.blog a{
+    color: #f4eae2;
+}
+.kakao{
+    background-color: #ffcf00;
+    color: #3c1d1b;
+}
+.kakao a{
+    color: #3c1d1b;
+}
+/* 가장 마지막 */
+footer{
+    margin-top: 100px;
+}
+.address{
+    width: 100vw;
+    height: 300px;
+    background-color: #fff;
+    color: rgb(83, 83, 83);
+    text-align: center;
+}
+
+.copyright-text{
+    font-size: 15px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+/* 1074로 작아졌을 때 */
+@media screen and (max-width: 1074px){
+    /* 맨 처음부터 십자가까지 */
+    .first-paragraph{
+        font-size:20px;
+    }
+    .poem{
+        height: 408.67px;
+    }
+    .poem img{
+        width: 270px;
+    }
+    .cross__first img{
+        width: 100px;
+    }   
+    #button_for_nnext{
+        padding: 0 10px;
+    } 
+    /* 박스 3개 */
+    .box{
+        flex-direction: column;
+    }
+    /* 약도 */
+    .information{
+        flex-direction: column;
+        font-size: 18px;
+    }
+    .information-text{
+        width: 300px;
+    }
+    .information-title{
+        margin-top: 10px;
+    }
+    /* footer */
+    .copyright-text{
+        margin-top: 50px;
+        font-size: 12px;
+    }
+}

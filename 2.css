@@ -1,0 +1,221 @@
+body{
+    background-repeat: none;
+}
+/* 배경색 */
+.first-paragraph{
+    background-color: #182338;
+}
+#secondback{
+    background-color: #3b0a0a;
+}
+#thirdback{
+    background-color: #231f20;
+}
+/* 옆에 버튼 */
+.fornav a{
+    color: grey;
+}
+.fornav a:hover{
+    color: #b69157;
+}
+.fornav{
+    position: relative;
+    left:20px;
+    display: block;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* 작은 화면전용 버튼 */
+.fornavsmall{
+    display: none;
+}
+.fornavsmall nav{
+    display:flex;
+    width: 100vw;
+}
+#smallbut{
+    width: 33.33333vw;
+    height: 40px;
+    line-height:40px;
+    text-align: center;
+    background-color: #b69157 ;
+    color:#DBDBDB;
+}
+
+/* 메인페이지 */
+.first-paragraph{
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    /* text-align: center; */
+}
+
+/* 왼쪽 글들 */
+.first_all{
+    /* padding: 0px 300px 0px 0px; */
+    position:relative;
+    transform: translate(-50%,-5%);
+    font-size: 36px;
+}
+.first__writing{
+    font-size: 60%;
+    color: #b69157;
+}
+.first__writing__title{
+    font-weight: bold;
+    color: #DBDBDB;
+}
+.first__video{
+    width: 800px;
+    height: 350px;
+    display: inline-block;
+}
+.two__button{
+    display: flex;
+    color:#b69157;
+    width: 800px;
+    height: 400px;
+}
+.click{
+    border: 3px solid #b69157;
+    font-size: 40px;
+    display: block;
+    width: 350px;
+    height: 350px;
+    color:#b69157;
+    font-weight: bold;
+    background-color: #3b0a0a;
+}
+.click:hover{
+    background-color: #b69157;
+    color:#DBDBDB;   
+}
+.on__click{
+    display: none;
+}
+.click__title{
+    font-weight: bold;
+    font-size: 70%;
+    color:#b69157;   
+}
+.click__sub{
+    font-weight: 300;
+    font-size: 52%; 
+    color:#DBDBDB;  
+}
+#back{
+    padding: 0px 30px;
+    background-color:#b69157 ;
+    border-radius: 15px;
+    border: 3px solid #b69157;
+    color: #f4eae2;
+    text-align: center;
+    font-size: 50%;
+}
+.blank__one {
+    display: none;
+}
+
+/* 마지막 부분 */
+.buttons{
+    display:flex;
+}
+#buttontop{
+    border: 1px solid #b69157;
+    width:150px;
+    color:#b69157;
+    font-size: 55%;
+    background-color: #231f20;  
+}
+#buttontop:hover{
+    background-color: #b69157;
+    color:#DBDBDB; 
+}
+#thirdparagraph{
+    display: none;
+    width:800px;
+    height:300px;
+    margin-top: 50px;
+}
+.wwriting{
+    display:flex;
+    color:#b69157;
+}
+.writing{
+    padding: 0 0 0 30px;
+    /* line-height: 180%; */
+}
+
+/* 반응형 웹을 위한 css */
+@media screen and (max-width: 1511px){
+    .first-paragraph{
+        flex-direction: column;
+    }   
+    .fornav{
+        display: none;       
+    }
+    .fornavsmall, .blank__one{
+        display: block;
+    }
+    .first_all{
+        transform: translate(0%,0%);
+    }
+    /* 두번째 페이지 */
+    .two__button{
+        flex-direction: column;
+    }
+}   
+@media screen and (max-width: 976px){
+    /* .first-paragraph{
+        justify-content:initial;
+    } */
+    .first_all{
+        font-size: 15px;
+        padding: 0 20px;
+        display: inline-block;
+    }
+    .first__video{
+        width: auto;
+        height: auto;
+        padding: 20px 0;
+    }
+    .first__video video{
+        width: 270px;
+        display: inline-block;
+    }
+     /* 두번째 페이지 */
+     .two__button{
+         flex-direction: column;
+         width: 310px;
+         height: 150px;
+     }
+     .click{
+         width: 280px;
+         font-size: 20px;
+     }
+     /* 세번째 페이지 */
+     .buttons{
+         width: 300px;
+     }
+     #thirdparagraph{
+         width: 310px;
+         margin-top: 0;
+     }
+     .wwriting{
+         flex-direction: column;
+         display:initial;
+         /* display: flex 때문에 사진크기가 꽉차게 변해서 그거 없애려고*/
+     }
+     .wwriting img {
+         margin-top: 10px;
+         width: 150px;
+     }
+     .writing{
+         padding: 0;
+     }
+}
+     
+    

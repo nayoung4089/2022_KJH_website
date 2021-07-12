@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+    <meta name="format-detection" content="telephone=no">
+    <script src="https://kit.fontawesome.com/27c417e7b0.js" crossorigin="anonymous"></script>
+    <link href="2.css" rel="stylesheet">
+    <link href="bar.css" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="2.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&amp;subset=korean" rel="stylesheet">
+<title>김정호 국어학원</title>
+</head>
+
+<body>
+  <nav class="navbar">
+      <div class="navbar__logo">
+        <li><img src="김정호국어1.png" id="top"></li>
+        <li><a href="index.html" id="top">김정호 국어학원</a></li>
+        <a href="#" class="navbar__toggleBtn">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+
+      <ul class="navbar__menu">
+          <li><div class="first" id="top"><a href="1.html">학원소개</a></div></li>
+          <li><div class="second" id="top"><a href="2.html">수업과정</a></div></li>
+          <li><div class="third" id="top"><a href="3.html">졸업생게시판</a></div></li>
+          <li><div class="forth" id="top"><a href="4.html">오시는 길</a></div></li>
+      </ul>
+
+      <ul class="navbar__icons">
+        <li><a href="https://blog.naver.com/PostList.nhn?blogId=sshkjhshk&from=postList&categoryNo=28#"><img src="블로그로고.png"></a></li>
+        <li><a href="https://map.naver.com/v5/search/%EA%B9%80%EC%A0%95%ED%98%B8%EA%B5%AD%EC%96%B4/place/33253425?c=14124059.1408126,4514138.6500989,13,0,0,0,dh&placePath=%2Fbooking%3FbookingRedirectUrl=https:%2F%2Fm.booking.naver.com%2Fbooking%2F6%2Fbizes%2F450699%3Ftheme=place%26entry=pll%26entry=pll&area=pll"><img src="네이버로고.png"></a></li>
+        <li><img src="카카오톡로고.png"></li>
+
+      </ul>
+  </nav>
+
+  <scroll-container>
+    <!-- 수업 맛보기 -->
+    <scroll-page id="page-1">
+          <div class="first-paragraph">
+            <!-- 옆에 누르기버튼 -->
+            <div class="fornav">
+              <nav>
+                <a href="#page-1">○ &emsp;수업 맛보기</a>
+                <br><br>
+                <a href="#page-2">○ &emsp;맞춤수업</a>
+                <br><br>
+                <a href="#page-3">○ &emsp;교육과정</a>
+              </nav>
+            </div>
+              <!-- 작은 화면 전용 -->
+              <div class="fornavsmall">
+                <nav>
+                  <a href="#page-1" id="smallbut">수업 맛보기</a>
+                  <a href="#page-2" id="smallbut">맞춤수업</a>
+                  <a href="#page-3" id="smallbut">교육과정</a>
+                </nav>
+              </div>
+              <div class="first_all">
+              <div class="first__writing">
+                  아버지의 산수유같이
+                  <br>국어를 심폐소생술 시킬 수 있는 방법,
+                </div>
+                  <div class="first__writing__title">
+                  김정호 국어는 국어를 바라보는 눈부터 길러줍니다
+              </div>
+              <br>
+              <!-- 밑에 비디오 들어갈거임!! -->
+              <div class="first__video">
+                <video autoplay muted loop>
+                  <!-- 소리 뮤트까지 이렇게 하는게 좋군! -->
+                <source src="김정호 영상.mp4" type="video/mp4">
+                </video> 
+                <br> 
+                <a href="https://m.blog.naver.com/sshkjhshk/221692250532" id="button_for_next">
+                  실제 수업모습이 궁금하다면?
+                </a>
+              </div>
+              </div>
+              <!-- justify-content: space-between으로 인해 여백이 생겼는데 -->
+              <!-- 그거 같은 간격으로 위아래 해주려고 그냥 의미 없는 class 하나 생성. -->
+              <div class="blank__one"></div>
+            </div>
+    </scroll-page>
+
+    
+    <!-- 맞춤수업 -->
+    <scroll-page id="page-2">
+      <div class="first-paragraph" id="secondback">
+        <!-- 옆에 누르기버튼 -->
+        <div class="fornav">
+          <nav>
+            <a href="#page-1">○ &emsp;수업 맛보기</a>
+            <br><br>
+            <a href="#page-2">○ &emsp;맞춤수업</a>
+            <br><br>
+            <a href="#page-3">○ &emsp;교육과정</a>
+          </nav>
+        </div>
+          <!-- 작은 화면 전용 -->
+          <div class="fornavsmall">
+            <nav>
+              <a href="#page-1" id="smallbut">수업 맛보기</a>
+              <a href="#page-2" id="smallbut">맞춤수업</a>
+              <a href="#page-3" id="smallbut">교육과정</a>
+            </nav>
+          </div>
+          <div class="first_all">
+          <div class="first__writing">
+              국어로 고통받는 학생들이 없는 그날까지,
+            </div>
+              <div class="first__writing__title">
+              김정호 국어의 수준별 맞춤수업을 소개합니다
+          </div>
+          <br>
+          <!-- 두 버튼 존재하고 누르면 각각의 설명 나오게 -->
+          <div class="two__button">
+            <input type="button" class="click" id="firstclickbutton" value="관리반">
+            <input type="button" class="click" id="secondclickbutton" value="심화반">
+            <div class="on__click" id="first__click">
+              <div class="click__title">
+              주도적 학습에 익숙하지 않고 
+              <br>꼼꼼한 관리가 필요한 학생을 위한 커리큘럼!
+            </div>
+            <div class="click__sub">
+              학원에서 과제까지 완벽하게 잡아드립니다
+              </div>
+            <div class="click__title"> 
+              <br>커리큘럼
+            </div>
+            <div class="click__sub">
+              문학 1시간
+              <br>비문학 1시간 수업(공통 수업)
+              <br>관리 및 코칭 1시간(총 3시간)
+              <br><br><br> ※심화반 수업 대상자는 매달 과제 상태 및 학습 태도 등을 통해 선별합니다.
+              <br>※모든 반은 수업 시간에 배운 부분을 이용한 실력테스트를 봅니다.
+            </div>
+            <button class="back" id="back">
+              돌아가기
+            </button>
+          </div>
+            <div class="on__click" id="second__click">
+              <div class="click__title">
+                주도적 학습이 가능하고 과제 이행이 성실한 학생,
+                <br>국어 만점을 목표로 하는 학생을 위한 커리큘럼!
+              </div>
+              <div class="click__sub">
+                처음 보는 내용도 단번에 풀 수 있게 만들어드립니다
+                </div>
+              <div class="click__title"> 
+                <br>커리큘럼
+              </div>
+              <div class="click__sub">
+                문학 1시간
+                <br>비문학 1시간 수업(공통 수업)
+                <br>심화 문학 1시간(총 3시간)
+                <br><br><br> ※심화반 수업 대상자는 매달 과제 상태 및 학습 태도 등을 통해 선별합니다.
+                <br>※모든 반은 수업 시간에 배운 부분을 이용한 실력테스트를 봅니다.
+              </div>
+              <button class="bback" id="back">
+                돌아가기
+              </button>
+            </div>
+            </div>
+          </div>
+            <!-- justify-content: space-between으로 인해 여백이 생겼는데 -->
+            <!-- 그거 같은 간격으로 위아래 해주려고 그냥 의미 없는 class 하나 생성. -->
+            <div class="blank__one"></div>
+
+          </div>
+        
+</scroll-page>
+
+
+    <!-- 교육과정 -->
+    <scroll-page id="page-3">
+      <div class="first-paragraph" id="thirdback">
+        <!-- 옆에 누르기버튼 -->
+        <div class="fornav">
+          <nav>
+            <a href="#page-1">○ &emsp;수업 맛보기</a>
+            <br><br>
+            <a href="#page-2">○ &emsp;맞춤수업</a>
+            <br><br>
+            <a href="#page-3">○ &emsp;교육과정</a>
+          </nav>
+        </div>
+          <!-- 작은 화면 전용 -->
+          <div class="fornavsmall">
+            <nav>
+              <a href="#page-1" id="smallbut">수업 맛보기</a>
+              <a href="#page-2" id="smallbut">맞춤수업</a>
+              <a href="#page-3" id="smallbut">교육과정</a>
+            </nav>
+          </div>
+          <div class="first_all">
+          <div class="first__writing">
+              내신과 수능, 두마리 토끼를 한번에 잡는
+            </div>
+              <div class="first__writing__title">
+              김정호 국어학원의 교육과정을 소개합니다
+          </div>
+          <br>
+          <!-- 네 개의 버튼 그대로 있고 밑만 바뀌는 구조로 -->
+          <div class="thirdall">
+          <div class="buttons">
+            <input type="button" class="one" id="buttontop" value="본교재">
+            <input type="button" class="two" id="buttontop" value="추가교재">
+            <input type="button" class="three" id="buttontop" value="어휘력">
+            <input type="button" class="four" id="buttontop" value="모의고사">
+          </div>  
+            <div class="writing__1" id="thirdparagraph">
+              <div class="wwriting">
+              <img src="그림1.png">
+              <div class="writing">
+                <div class="click__title">
+                스스로 내용면과 형식면을 정리하고,
+                <br>수업시간 선생님과 비교를 통해 정확한 방법 습득!
+                <br>철저한 예습과 오답정리로 국어를 내 것으로 만듭니다
+              </div>
+              <div class="click__sub">
+                <br><br>
+                → 낯선 지문도 스스로 해석할 수 있는 능력
+                <br>→ 한번에 지문 이해가 가능해 문제풀이 시간 단축
+                <br>→ 정확한 소거법으로 고민없이 정답고르기        
+              </div>
+              </div>
+              </div>
+              <br>
+              <a href="v2.html" id="button_for_next">
+                아빠, 나 나을 수 있는 거 맞지?
+              </a>
+            </div>
+
+            <div class="writing__2" id="thirdparagraph">
+              <div class="wwriting">
+              <img src="그림1.png">
+              <div class="writing">
+                <div class="click__title">
+                  분기별로 개념서, 고전시가, 문법을 번갈아 진행!
+                  <br> 복습을 통해 자기주도적 학습을 장려합니다
+                </div>
+                <div class="click__sub">
+                  <br><br>
+                  → 국어의 시작, 탄탄한 개념어 정리를 통해 선지 100% 이해
+                  <br>→ 고전시가의 생소한 단어, 처음 봐도 맥락으로 풀 수 있는 비법 공개
+                  <br>→ 무조건 가져가야 하는 화작문 만점 만들기        
+                </div>
+                </div>
+                </div>
+                <br>
+                <a href="v2.html" id="button_for_next">
+                  아빠, 나 나을 수 있는 거 맞지?
+                </a>
+              </div>
+              
+            <div class="writing__3" id="thirdparagraph">
+              <div class="wwriting">
+              <img src="그림1.png">
+              <div class="writing">
+                <div class="click__title">
+                  한자성어, 속담, 어휘 시험을 통해
+                  <br>새나가는 점수 없이 완벽한 1등급 완성!
+                </div>
+                <div class="click__sub">
+                  <br><br>
+                  → 수능에 반드시 출제되는 생소한 어휘들!
+                  <br>→ 수능장에서는 모르는 단어가 없도록 매주 테스트 진행
+                  <br>→ 빈틈없는 국어 점수 완성        
+                </div>
+                </div>
+                </div>
+                <br>
+                <a href="v2.html" id="button_for_next">
+                  아빠, 나 나을 수 있는 거 맞지?
+                </a>
+              </div>
+
+            <div class="writing__4" id="thirdparagraph">
+              <div class="wwriting">
+              <img src="그림1.png">
+              <div class="writing">
+                <div class="click__title">
+                  기출 만큼 중요한 것은 없다!
+                  <br>매주 45문제의 모의고사를 통해 실전감각 향상!
+                </div>
+                <div class="click__sub">
+                  <br><br>
+                  → 사설 모의고사 100번보다 정확한 기출 1회독이 낫다!
+                  <br>→ 내용면 형식면의 실전 적용과 시간조절
+                  <br>→ 김정호 국어학원과 함께하는 기출 완벽 뽀개기
+                </div>
+                </div>
+                </div>
+                <br>
+                <a href="v2.html" id="button_for_next">
+                  아빠, 나 나을 수 있는 거 맞지?
+                </a>
+              </div>
+        </div>
+        </div>
+          <!-- justify-content: space-between으로 인해 여백이 생겼는데 -->
+          <!-- 그거 같은 간격으로 위아래 해주려고 그냥 의미 없는 class 하나 생성. -->
+          <div class="blank__one"></div>
+        </div>
+</scroll-page>
+    
+    </scroll-container>
+    </body>
+    </html>

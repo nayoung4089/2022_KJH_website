@@ -1,0 +1,92 @@
+body{
+    background-color:#231f20;
+}
+.information__all{
+    font-size: 40px;
+    font-weight: bold;
+    text-align:center;
+    margin-top: 30px;
+}
+.information__title{
+    color: #DBDBDB;
+    font-size: 100%;
+}
+.information__subtitle{
+    font-size: 150%;
+    color: #b69157;   
+}
+.information-title{
+    font-size: 100%;
+    font-weight: bold;
+    color: #b69157;
+}
+.information-subtitle{
+    font-size: 83%;
+    font-weight: 300;
+    color: #DBDBDB;
+}
+.information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.map iframe{
+    padding: 25px;
+}
+
+#inf{
+    font-size: 24px;
+}
+.lastbutton{
+    display: flex;
+}
+#but{
+    margin-top: 30px;
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    /* line-height와 height 같으면 세로가운데정렬 */
+    text-align: center;
+    font-size: 75%;
+}
+.blog{
+    background-color: grey;
+    color: white;
+}
+.blog a{
+    color: white;
+}
+.kakao{
+    background-color: #ffcf00;
+    color: #3c1d1b;
+}
+.kakao a{
+    color: #3c1d1b;
+}
+@media screen and (max-width: 1058px){
+    .information{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 666px){
+    .information{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .information__all{
+        font-size: 20px;
+    }
+    #inf{
+        font-size: 15px;
+    }
+    .map iframe{
+        width: 300px;
+        height: 200px;
+    }
+    #but{
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+    }  
+}

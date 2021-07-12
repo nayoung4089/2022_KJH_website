@@ -1,0 +1,27 @@
+body{
+    background-color: #182338;
+}
+
+.hidden__all{
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    transform: translate(0,90%);
+}
+.hidden__title{
+    color: #b69157;
+    font-size: 200%;
+    font-weight: bold;
+}
+.hidden__subtitle{
+    color: #DBDBDB;
+    font-size: 80%;
+    font-weight: bold;
+    padding: 20px;
+
+}
+@media screen and (max-width: 666px){
+    .hidden__all{
+        font-size: 20px;
+    }
+}

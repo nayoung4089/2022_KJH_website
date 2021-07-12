@@ -1,0 +1,132 @@
+:root{
+    --text-color: #111;
+    --text-hover-color: #8c6239;
+    --sub-color: #8c6239;
+    --back-color: #fff;
+}
+*{ margin: 0;padding:0;box-sizing:border-box;
+}
+ul,li { list-style: none;
+}
+body{
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* overflow-x:hidden; */
+    /* background-color: #d6d0c5; */
+}
+a{
+    text-decoration: none;
+}
+.navbar a{
+    color:var(--text-color);
+    font-size: 120%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--back-color);
+    padding: 20px 12px;
+}
+
+.navbar__logo{
+    display: flex;
+    align-items: center;
+    /* 로고랑 김정호국어랑 세로 가운데정렬하려고 */
+    /* 하위 top에는 margin 0 auto링 display:block 해주면 됨. */
+
+    list-style: none;
+    padding: 0;
+    font-size: 180%;
+    font-weight: bold;
+    width: 350px;
+}
+.navbar__menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    color:var(--text-color);
+}
+#top{
+    display:block;
+    padding: 20px 12px;
+}
+.navbar__menu li:hover{
+    /* background-color: rgb(85, 157, 175);
+    border-radius: 4px; */
+    color:var(--text-hover-color);
+}
+.navbar__icons{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 350px;
+    /* position: absolute; */
+    color:var(--text-color);
+}
+.navbar__icons li{
+    padding: 20px 12px;
+}
+
+.navbar__toggleBtn{
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: blue;
+    display: none;
+}
+#button_for_next{
+    padding: 0px 30px;
+    background-color:#b69157 ;
+    border-radius: 15px;
+    border: 3px solid #b69157;
+    color: #f4eae2;
+    text-align: center;
+    font-size: 50%;
+}
+
+
+@media screen and (max-width: 1165px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .navbar__logo{
+        width: 300px;
+        font-size: 130%;
+    }
+    .navbar__logo img{
+        width: 70px;
+    }
+    .navbar__menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-size: 14px;
+    }
+    .navbar__menu li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar__icons{
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+    .navbar__toggleBtn{
+        display: block;
+        
+    }
+
+    .navbar__menu.active,
+    .navbar__icons.active{
+        display: flex;
+    }
+}
+.detail__all{
+    background-color:rgb(86, 86, 187);
+    width: 100vw;
+    padding: 0;
+}

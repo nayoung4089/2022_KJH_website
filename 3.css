@@ -1,0 +1,35 @@
+body{
+    background-color: #182338;
+}
+.grad__all{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+.grad__title{
+    font-size: 200%;
+    color: #DBDBDB;
+    font-weight: bold;
+
+}
+.grad__subtitle{
+    font-size: 60%;
+    color:#b69157;
+    font-weight: 400;
+}
+.output{
+    text-align: center;
+    font-size: 20px;
+}
+.output__box{
+    display: inline-block;
+}
+.output__pic{
+    font-size: 30%;
+    color:#b69157;
+}
+.output__text{
+    font-size: 100%;
+    color:#DBDBDB;
+
+}
