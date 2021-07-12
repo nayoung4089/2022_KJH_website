@@ -117,8 +117,8 @@ body{
     color: #b69157;
 }
 
-#inf{
-    margin-right: 20px;
+.map iframe{
+    padding: 20px;
 }
 
 .lastbutton{
@@ -191,12 +191,16 @@ footer{
         flex-direction: column;
     }
     /* 약도 */
+    .map iframe{
+        width: 300px;
+        height:300px;
+    }
     .information{
         flex-direction: column;
         font-size: 18px;
     }
     .information-text{
-        width: 300px;
+        width: 310px;
     }
     .information-title{
         margin-top: 10px;
