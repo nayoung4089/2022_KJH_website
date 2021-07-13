@@ -4,7 +4,7 @@ body{
 .grad__all{
     text-align: center;
     margin-top: 100px;
-    font-size: 40px;
+    font-size: 36px;
 }
 .grad__title{
     font-size: 200%;
@@ -17,19 +17,30 @@ body{
     color:#b69157;
     font-weight: 400;
 }
+
+
+.output__all{
+    font-size: 36px;
+    display: flex;
+    justify-content: space-between;
+}
 .output{
-    text-align: center;
-    font-size: 20px;
+    margin-top: 50px;
+    max-width: 1000px;
+    padding: 50px;
+    width: 100vw;
+    border: 5px outset #b69157;
 }
 .output__box{
     display: inline-block;
 }
-.output__pic{
-    font-size: 30%;
+.box__title{
+    font-size: 55%;
     color:#b69157;
+    font-weight: "bold";
 }
-.output__text{
-    font-size: 100%;
+.box__text{
+    font-size: 50%;
     color:#DBDBDB;
-
+    font-weight: 200;
 }
