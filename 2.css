@@ -125,6 +125,7 @@ html{
 }
 #buttontop{
     border: 1px solid #b69157;
+    padding: 2px 0;
     width:150px;
     color:#b69157;
     font-size: 55%;
@@ -195,7 +196,8 @@ html{
      .click{
          width: 280px;
          font-size: 20px;
-     }
+         border: 1px solid #b69157;
+        }
      /* 세번째 페이지 */
      .buttons{
          width: 300px;

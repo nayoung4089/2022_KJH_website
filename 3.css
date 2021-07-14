@@ -20,16 +20,18 @@ body{
 
 
 .output__all{
-    font-size: 36px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 20px;
 }
 .output{
+    font-size: 36px;
     margin-top: 50px;
     max-width: 1000px;
     padding: 50px;
     width: 100vw;
-    border: 5px outset #b69157;
+    border: 8px outset #b69157;
 }
 .output__box{
     display: inline-block;
@@ -43,4 +45,18 @@ body{
     font-size: 50%;
     color:#DBDBDB;
     font-weight: 200;
+}
+
+@media screen and (max-width: 976px){
+    .grad__all{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .output{
+        border: 5px outset #b69157;
+        font-size: 15px;
+        padding: 30px;
+        margin-top: 30px;
+    }
+
 }
