@@ -2,18 +2,25 @@ body{
     background-color:#231f20;
 }
 .information__all{
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
     text-align:center;
-    margin-top: 30px;
+    margin-top: 90px;
 }
-.information__title{
+.second__information__title{
     color: #DBDBDB;
-    font-size: 100%;
+    font-size: 65%;
+    font-weight: 300;
 }
 .information__subtitle{
-    font-size: 150%;
+    font-size: 200%;
     color: #b69157;   
+}
+
+/* 6.html을 위한 css */
+.information__title{
+    color: #DBDBDB;
+    font-size: 120%;
 }
 .information-title{
     font-size: 100%;
@@ -67,6 +74,9 @@ body{
 @media screen and (max-width: 1058px){
     .information{
         flex-direction: column;
+    }
+    .information__all{
+        margin-top: 50px;
     }
 }
 @media screen and (max-width: 666px){

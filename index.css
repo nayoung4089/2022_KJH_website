@@ -27,7 +27,10 @@ body{
 .poem{
     display: inline-block;
     border: 5px outset #b69157;
-    height: 600.63px;
+    font-size: 50%;
+    background-color: #f4eae2;
+    color:#231f20;
+    padding: 10px 30px;
 }
 
 /* 십자가 내용 */
@@ -173,12 +176,6 @@ footer{
     /* 맨 처음부터 십자가까지 */
     .first-paragraph{
         font-size:20px;
-    }
-    .poem{
-        height: 408.67px;
-    }
-    .poem img{
-        width: 270px;
     }
     .cross__first img{
         width: 100px;
