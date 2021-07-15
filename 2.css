@@ -149,7 +149,13 @@ html{
     padding: 0 0 0 30px;
     /* line-height: 180%; */
 }
-
+/* footer */
+.address__forsec{
+    width: 100vw;
+    background-color: #fff;
+    color: rgb(83, 83, 83);
+    text-align: center;
+}
 /* 반응형 웹을 위한 css */
 @media screen and (max-width: 1511px){
     .first-paragraph{

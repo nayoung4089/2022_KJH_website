@@ -152,24 +152,6 @@ body{
 .kakao a{
     color: #3c1d1b;
 }
-/* 가장 마지막 */
-footer{
-    margin-top: 100px;
-}
-.address{
-    width: 100vw;
-    height: 300px;
-    background-color: #fff;
-    color: rgb(83, 83, 83);
-    text-align: center;
-}
-
-.copyright-text{
-    font-size: 15px;
-    margin-top: 100px;
-    text-align: center;
-}
-
 
 /* 1074로 작아졌을 때 */
 @media screen and (max-width: 1074px){
@@ -201,10 +183,5 @@ footer{
     }
     .information-title{
         margin-top: 10px;
-    }
-    /* footer */
-    .copyright-text{
-        margin-top: 50px;
-        font-size: 12px;
     }
 }
