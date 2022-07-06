@@ -1,20 +1,18 @@
 body{
-    background-color: #182338;
+    background-color: #ebebeb;
 }
 .grad__all{
     text-align: center;
-    margin-top: 100px;
     font-size: 36px;
+    padding: 192px 0 0 0;
 }
 .grad__title{
     font-size: 200%;
-    color: #DBDBDB;
     font-weight: bold;
 
 }
 .grad__subtitle{
     font-size: 60%;
-    color:#b69157;
     font-weight: 400;
 }
 
@@ -27,24 +25,26 @@ body{
 }
 .output{
     font-size: 36px;
-    margin-top: 50px;
     max-width: 1000px;
     padding: 50px;
     width: 100vw;
-    border: 8px outset #b69157;
 }
 .output__box{
     display: inline-block;
-    padding: 10px 0;
+    box-shadow: 10px 10px 10px 5px var(--shadow);
+    padding: 20px;
+    border-radius: 50px 0;
+    margin-bottom: 50px;
+    background-color: white;
 }
 .box__title{
     font-size: 55%;
-    color:#b69157;
-    font-weight: "bold";
+    color:var(--main-color);
+    font-weight: 500;
+    padding: 10px 0 20px 0;
 }
 .box__text{
     font-size: 50%;
-    color:#DBDBDB;
     font-weight: 200;
 }
 

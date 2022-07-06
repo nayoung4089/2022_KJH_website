@@ -1,22 +1,16 @@
 body{
-    background-repeat: none;
+    background-color: var(--background-color);
 }
 /* 배경색 */
-.first-paragraph{
-    background-color: #182338;
-}
 #secondback{
-    background-color: #3b0a0a;
-}
-#thirdback{
-    background-color: #231f20;
+    background-color: #ebebeb;
 }
 /* 옆에 버튼 */
 .fornav a{
-    color: grey;
+    color: black;
 }
 .fornav a:hover{
-    color: #b69157;
+    color: var(--sub-color);
 }
 .fornav{
     position: relative;
@@ -29,6 +23,7 @@ html{
 /* 작은 화면전용 버튼 */
 .fornavsmall{
     display: none;
+    box-shadow: 3px 3px 3px 2px var(--shadow);
 }
 .fornavsmall nav{
     display:flex;
@@ -39,8 +34,8 @@ html{
     height: 40px;
     line-height:40px;
     text-align: center;
-    background-color: #b69157 ;
-    color:#DBDBDB;
+    background-color: var(--main-color) ;
+    color: white;
 }
 
 /* 메인페이지 */
@@ -54,66 +49,74 @@ html{
 }
 
 /* 왼쪽 글들 */
+.margin{
+    margin-top: 192px;
+}
 .first_all{
-    /* padding: 0px 300px 0px 0px; */
     position:relative;
     transform: translate(-50%,-5%);
     font-size: 36px;
 }
 .first__writing{
     font-size: 60%;
-    color: #b69157;
+    color:var(--sub-color);
 }
 .first__writing__title{
     font-weight: bold;
-    color: #DBDBDB;
 }
 .first__video{
     width: 800px;
     height: 350px;
     display: inline-block;
 }
+video{
+    box-shadow: 10px 10px 10px 5px var(--shadow);
+    width: 800px;
+}
 .two__button{
     display: flex;
-    color:#b69157;
     width: 800px;
-    height: 400px;
 }
 .click{
-    border: 3px solid #b69157;
     font-size: 40px;
     display: block;
-    width: 350px;
+    width: 100%;
     height: 350px;
-    color:#b69157;
     font-weight: bold;
-    background-color: #3b0a0a;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px var(--shadow);
+    border:0;
 }
 .click:hover{
-    background-color: #b69157;
-    color:#DBDBDB;   
+    background-color: var(--main-color);
+    color:white;   
 }
 .on__click{
     display: none;
+    box-shadow: 10px 10px 10px 5px var(--shadow);
+    padding: 50px;
+    border-radius: 50px 0;
+    background-color: white;
 }
 .click__title{
     font-weight: bold;
     font-size: 70%;
-    color:#b69157;   
+    color: var(--main-color);
 }
 .click__sub{
     font-weight: 300;
     font-size: 52%; 
-    color:#DBDBDB;  
+    color: black;
 }
+
 #back{
     padding: 0px 30px;
-    background-color:#b69157 ;
     border-radius: 15px;
-    border: 3px solid #b69157;
-    color: #f4eae2;
     text-align: center;
     font-size: 50%;
+    box-shadow: 5px 5px 5px 2px var(--shadow);
+    background-color: var(--main-color);
+    color: white;
 }
 .blank__one {
     display: none;
@@ -123,17 +126,16 @@ html{
 .buttons{
     display:flex;
 }
+
 #buttontop{
-    border: 1px solid #b69157;
-    padding: 2px 0;
-    width:150px;
-    color:#b69157;
+    padding: 5px;
+    width: 150px;
     font-size: 55%;
-    background-color: #231f20;  
-}
-#buttontop:hover{
-    background-color: #b69157;
-    color:#DBDBDB; 
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px var(--shadow);
+    border: 0;
+    border-radius: 20px 0;
+    margin-right: 20px;
 }
 #thirdparagraph{
     display: none;
@@ -143,7 +145,6 @@ html{
 }
 .wwriting{
     display:flex;
-    color:#b69157;
 }
 .writing{
     padding: 0 0 0 30px;
@@ -152,20 +153,28 @@ html{
 /* footer */
 .address__forsec{
     width: 100vw;
-    background-color: #fff;
-    color: rgb(83, 83, 83);
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 300;
     text-align: center;
+    padding: 30px 0;
 }
 /* 반응형 웹을 위한 css */
 @media screen and (max-width: 1511px){
+    .margin{
+        margin-top: 96px;
+    }
     .first-paragraph{
-        flex-direction: column;
+        justify-content: center;
     }   
     .fornav{
         display: none;       
     }
     .fornavsmall, .blank__one{
         display: block;
+        position: fixed;
+        top: 84px;
+        z-index: 3000;
     }
     .first_all{
         transform: translate(0%,0%);
@@ -176,9 +185,6 @@ html{
     }
 }   
 @media screen and (max-width: 976px){
-    /* .first-paragraph{
-        justify-content:initial;
-    } */
     .first_all{
         font-size: 15px;
         padding: 0 20px;
@@ -193,6 +199,9 @@ html{
         width: 270px;
         display: inline-block;
     }
+    .on__click{
+        padding: 30px;
+    }
      /* 두번째 페이지 */
      .two__button{
          flex-direction: column;
@@ -202,7 +211,6 @@ html{
      .click{
          width: 280px;
          font-size: 20px;
-         border: 1px solid #b69157;
         }
      /* 세번째 페이지 */
      .buttons{
@@ -218,7 +226,7 @@ html{
          /* display: flex 때문에 사진크기가 꽉차게 변해서 그거 없애려고*/
      }
      .wwriting img {
-         margin-top: 10px;
+         margin-top: 30px;
          width: 150px;
      }
      .writing{

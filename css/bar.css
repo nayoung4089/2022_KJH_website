@@ -1,7 +1,10 @@
 :root{
+    --main-color:#172978;
+    --shadow: rgba(200, 200, 200, 0.5);
+    --background-color: rgb(252, 252, 252);
+    --sub-color:#767676;
     --text-color: #111;
     --text-hover-color: #8c6239;
-    --sub-color: #8c6239;
     --back-color: #fff;
 }
 *{ margin: 0;padding:0;box-sizing:border-box;
@@ -11,9 +14,8 @@ ul,li { list-style: none;
 body{
     margin: 0;
     font-family: 'Noto Sans KR', sans-serif;
-    /* overflow-x:hidden; */
-    /* background-color: #d6d0c5; */
 }
+
 a{
     text-decoration: none;
 }
@@ -26,7 +28,10 @@ a{
     justify-content: space-between;
     align-items: center;
     background-color:var(--back-color);
-    padding: 20px 12px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 5px 5px 5px 2px var(--shadow);
+    z-index: 3000;
 }
 
 .navbar__logo{
@@ -74,21 +79,24 @@ a{
     display: none;
 }
 #button_for_next{
-    padding: 0px 30px;
-    background-color:#b69157 ;
-    border-radius: 15px;
-    border: 3px solid #b69157;
-    color: #f4eae2;
+    padding: 5px 30px;
+    background-color: var(--main-color);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
     text-align: center;
     font-size: 50%;
+    box-shadow: 5px 5px 5px 5px var(--shadow);
 }
 /* footer */
 .address{
     margin-top: 100px;
     width: 100vw;
-    background-color: #fff;
-    color: rgb(83, 83, 83);
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 200;
     text-align: center;
+    padding: 30px 0;
 }
 .copyright-text{
     font-size: 15px;
@@ -101,7 +109,7 @@ a{
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        padding: 8px 24px;
+        padding: 0px 30px;
     }
     .navbar__logo{
         width: 300px;

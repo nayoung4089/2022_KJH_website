@@ -41,28 +41,40 @@ var threew = document.querySelector('.writing__3');
 var fourw = document.querySelector('.writing__4');
 
 onew.style.display = "block";
-one.addEventListener('click', ()=>{
+one.style.backgroundColor = "#172978";
+one.style.color="white";
+function clickIt(one, onew){
+    one.style.backgroundColor = "#172978";
+    one.style.color="white";
     onew.style.display = "block";
+}
+function notClickIt(two, twow){
+    two.style.backgroundColor = "white";
+    two.style.color="#172978";
     twow.style.display = "none";
-    threew.style.display = "none";
-    fourw.style.display = "none";
+}
+
+one.addEventListener('click', ()=>{
+    clickIt(one, onew);
+    notClickIt(two, twow);
+    notClickIt(three, threew);
+    notClickIt(four, fourw);
 });
 two.addEventListener('click', ()=>{
-    onew.style.display = "none";
-    twow.style.display = "block";
-    threew.style.display = "none";
-    fourw.style.display = "none";
+    clickIt(two, twow);
+    notClickIt(one, onew);
+    notClickIt(three, threew);
+    notClickIt(four, fourw);
 });
 three.addEventListener('click', ()=>{
-    onew.style.display = "none";
-    twow.style.display = "none";
-    threew.style.display = "block";
-    fourw.style.display = "none";
+    clickIt(three, threew);
+    notClickIt(two, twow);
+    notClickIt(one, onew);
+    notClickIt(four, fourw);
 });
 four.addEventListener('click', ()=>{
-    onew.style.display = "none";
-    twow.style.display = "none";
-    threew.style.display = "none";
-    fourw.style.display = "block";
+    clickIt(four, fourw);
+    notClickIt(two, twow);
+    notClickIt(three, threew);
+    notClickIt(one, onew);
 });
-

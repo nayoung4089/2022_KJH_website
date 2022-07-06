@@ -1,53 +1,48 @@
 body{
-    background-color: #231f20;
+    background-color: var(--background-color);
 }
 .teacher_all{
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 100px;
     font-size: 36px;
-
+    padding: 192px 0 0 0;
 }
 .teacher_picture{
-    margin: 0 100px;
+    margin: 96px 100px 0 100px;
 }
 #teacherpic{
     width:400px;
+    box-shadow: 10px 10px 10px 5px var(--shadow);
 }
-/* #teacherpic{
-    border: 5px solid #8c6239;
-} */
+#teacherpic-superman{
+    width:400px;
+}
 .teacher_writing{
     margin: 0 100px;
+    background-color:white;
 }
 .first-title{
     font-size: 150%;
     font-weight: bold;
-    color: #b69157;
 }
 .first-title-2{
     font-size: 60%;
-    font-weight: 400;
-    color: #DBDBDB;
+    font-weight: 300;
+}
+.teacher_writing{
+    box-shadow: 10px 10px 10px 5px var(--shadow);
+    padding: 50px;
+    border-radius: 50px 0;
 }
 .first-subtitle{
     font-weight: bold;
-    color: #DBDBDB;
+    color: var(--main-color);
 }
 .first-subtitle-2{
     font-size: 45%;
     font-weight: 350;
-    color: #f3f3f3;
-}
-#button_for_next{
-    padding: 0px 30px;
-    background-color:#b69157 ;
-    border-radius: 15px;
-    border: 3px solid #b69157;
-    color: #f4eae2;
-    text-align: center;
-    font-size: 50%;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1217px){

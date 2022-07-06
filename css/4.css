@@ -1,36 +1,34 @@
 body{
-    background-color:#231f20;
+    background-color: var(--background-color);
 }
 .information__all{
     font-size: 36px;
     font-weight: bold;
     text-align:center;
-    margin-top: 90px;
+    padding: 192px 0 0 0;
 }
 .second__information__title{
-    color: #DBDBDB;
-    font-size: 65%;
-    font-weight: 300;
+    font-size: 63%;
+    font-weight: 400;
+    color:var(--sub-color);
 }
 .information__subtitle{
-    font-size: 190%;
-    color: #b69157;   
+    font-size: 180%;
 }
 
 /* 6.html을 위한 css */
 .information__title{
-    color: #DBDBDB;
     font-size: 120%;
+    color: var(--sub-color);
+    font-weight: 500;
 }
 .information-title{
     font-size: 100%;
     font-weight: bold;
-    color: #b69157;
 }
 .information-subtitle{
     font-size: 83%;
     font-weight: 300;
-    color: #DBDBDB;
 }
 .information{
     display: flex;
@@ -38,12 +36,14 @@ body{
     align-items: center;
     margin-top: 50px;
 }
-.map iframe{
-    padding: 25px;
+.map{
+    box-shadow: 5px 5px 5px 5px var(--shadow);
 }
-
 #inf{
     font-size: 24px;
+}
+.information-text{
+    padding: 0 0 0 50px;
 }
 .lastbutton{
     display: flex;
@@ -55,7 +55,10 @@ body{
     line-height: 50px;
     /* line-height와 height 같으면 세로가운데정렬 */
     text-align: center;
-    font-size: 75%;
+    font-size: 80%;
+    border-radius: 30px;
+    margin-right: 20px;
+    box-shadow: 5px 5px 5px 5px var(--shadow);
 }
 .blog{
     background-color: grey;
@@ -95,7 +98,7 @@ body{
         height: 200px;
     }
     #but{
-        width: 100px;
+        width: 120px;
         height: 30px;
         line-height: 30px;
     }  
