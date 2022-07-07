@@ -168,6 +168,9 @@ mark{
 
 /* 1074로 작아졌을 때 */
 @media screen and (max-width: 1074px){
+    .first-subtitle {
+        font-size: 80%;
+    }
     .video video{
         margin-top: 83px;
     }
@@ -184,6 +187,9 @@ mark{
     /* 박스 3개 */
     .box{
         flex-direction: column;
+    }
+    .box-1-subtitle {
+        font-size: 70%;
     }
     /* 약도 */
     .map iframe{
