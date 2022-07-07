@@ -51,12 +51,11 @@ body{
 @media screen and (max-width: 976px){
     .grad__all{
         font-size: 20px;
-        margin-top: 50px;
+        padding: 134px 0 0 0;
     }
     .output{
-        border: 5px outset #b69157;
         font-size: 23px;
-        padding: 30px;
+        padding: 0;
         margin-top: 30px;
     }
 

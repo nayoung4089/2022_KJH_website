@@ -6,7 +6,6 @@ body{
     margin-top:96px;
     width:100vw;
     min-height:100%;
-
 }
 .first-paragraph{
     text-align: center;
@@ -15,7 +14,7 @@ body{
 .first-title{
     margin-top: 80px;
     padding: 20px 0;
-    font-size: 110%;
+    font-size: 120%;
     font-weight: bold;
 }
 .first-subtitle{
@@ -86,12 +85,12 @@ mark{
 }
 .box-1-title{
     margin-top: 30px;
-    font-size: 1.5rem;
+    font-size: 120%;
     font-weight: bold;
 }
 .box-1-subtitle{
     margin-top: 20px;
-    font-size: 0.95rem;
+    font-size: 80%;
     font-weight: 300;
 }
 
@@ -188,7 +187,6 @@ mark{
     }
     /* 약도 */
     .map iframe{
-        padding: 10px;
         width: auto;
         height: auto;
     }
@@ -197,9 +195,15 @@ mark{
         font-size: 18px;
     }
     .information-text{
-        width: 310px;
+        padding:0;
+        width: 270px;
     }
     .information-title{
-        margin-top: 10px;
+        margin-top: 30px;
+    }
+    #but{
+        height: 35px;
+        line-height: 35px;
+        /* line-height와 height 같으면 세로가운데정렬 */
     }
 }

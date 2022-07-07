@@ -23,11 +23,11 @@ body{
     background-color:white;
 }
 .first-title{
-    font-size: 150%;
+    font-size: 200%;
     font-weight: bold;
 }
 .first-title-2{
-    font-size: 60%;
+    font-size: 63%;
     font-weight: 300;
 }
 .teacher_writing{
@@ -40,7 +40,7 @@ body{
     color: var(--main-color);
 }
 .first-subtitle-2{
-    font-size: 45%;
+    font-size: 50%;
     font-weight: 350;
     margin-bottom: 30px;
 }
@@ -49,7 +49,7 @@ body{
     .teacher_all{
         flex-direction: column;
         font-size: 23px;
-        margin-top: 50px;
+        padding: 134px 0 0 0;
     }
     .teacher_picture{
         margin: 0 auto;
@@ -57,9 +57,12 @@ body{
     #teacherpic{
         width: 270px;
     }
+    #teacherpic-superman{
+        width:270px;
+    }
     .teacher_writing{
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin: 50px 20px 0 20px;
     }
 
 }
