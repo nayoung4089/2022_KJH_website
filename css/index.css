@@ -29,6 +29,7 @@ body{
     font-size: 50%;
     padding: 10px 30px;
     background-color: white;
+    margin-bottom: 50px;
 }
 mark{
     background-color: white; 
@@ -84,7 +85,7 @@ mark{
 }
 .box-1-title{
     margin-top: 30px;
-    font-size: 120%;
+    font-size: 110%;
     font-weight: bold;
 }
 .box-1-subtitle{
@@ -167,6 +168,9 @@ mark{
 
 /* 1074로 작아졌을 때 */
 @media screen and (max-width: 1074px){
+    .poem{
+        margin:0;
+    }
     .first-subtitle {
         font-size: 80%;
     }
