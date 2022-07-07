@@ -266,7 +266,7 @@ video{
      }
      #buttontop{
         margin-right: 10px;
-        font-size: 80%;
+        font-size: 70%;
         box-shadow: 3px 3px 3px 2px var(--shadow);
      }
 }
