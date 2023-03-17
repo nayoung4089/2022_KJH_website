@@ -3,7 +3,7 @@
 > Link: https://www.kimjh-academy.com/
 
 ## 🕰 개발기간
-~ 2022.07
+~ 2022.07.07
 
 ## ⚙️ 언어
 ```HTML``` ```Javascript``` ```CSS```
